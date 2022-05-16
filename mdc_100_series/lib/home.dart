@@ -139,7 +139,36 @@ class _HomepageState extends State<Homepage> {
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-
+                    children: [
+                      for(var data in places)
+                      GestureDetector(
+                        onTap: () {
+                          
+                        },
+                        child: Container(
+                          width: 250,
+                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          child: Column(
+                            children: [
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    child: Image.asset('images/'+data['imagen']),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                                    child: Text(data['precio'] + 'S/', style: TextStyle(
+                                      fontSize: 16,
+                                    ),),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],
