@@ -149,8 +149,10 @@ class _HomepageState extends State<Homepage> {
                           width: 250,
                           padding: EdgeInsets.symmetric(horizontal: 15),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Stack(
+                                alignment: Alignment.topRight,
                                 children: [
                                   ClipRRect(
                                     child: Image.asset('images/'+data['imagen']),
@@ -158,19 +160,78 @@ class _HomepageState extends State<Homepage> {
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                    child: Text(data['precio'] + 'S/', style: TextStyle(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(30),
+                                        bottomLeft: Radius.circular(30),
+                                        topRight: Radius.circular(8)
+                                      )
+                                    ),
+                                    child: Text('S/' + data['precio'], style: TextStyle(
                                       fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white
                                     ),),
                                   )
                                 ],
-                              )
+                              ),
+                              Text(data['nombre'], style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18
+                              ),),
                             ],
                           ),
                         ),
                       )
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: 20),
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text('Mas Hoteles en Arequipa', style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                  ),),
+                  ),
+                  for(var data in places)
+                  Container(
+                    padding: EdgeInsets.all(15),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            height: 150,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: AssetImage('images/'+data['imagen']),
+                                fit: BoxFit.cover
+                              )
+                            ),
+                            ),
+                          ),
+                        Expanded(
+                          flex: 6,
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Column(
+                              children: [
+
+                              ]
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Center(),
+                        ),
+                      ],
+                    ),
+                  )
               ],
             )
           )
