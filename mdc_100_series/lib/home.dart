@@ -70,7 +70,7 @@ class _HomepageState extends State<Homepage> {
                 height: size.height * 0.4,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/app-de-viajes.png'),
+                    image: AssetImage('assets/app-viaje.png'),
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.only(
@@ -219,15 +219,33 @@ class _HomepageState extends State<Homepage> {
                           child: Padding(
                             padding: EdgeInsets.symmetric(horizontal: 10),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
-                              ]
+                                Text(data['nombre'], style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16
+                                ),),
+                                SizedBox(height: 15),
+                                Text(data['descripcion'], style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 14
+                                ),),
+                                SizedBox(height: 15),
+                                ElevatedButton(
+                                  onPressed: (){},
+                                  child: Text('Viajar ahora'),
+                                )
+                              ],
                             ),
                           ),
                         ),
                         Expanded(
                           flex: 3,
-                          child: Center(),
+                          child: Text('S/.' + data['precio'], style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),
+                          ),
                         ),
                       ],
                     ),
