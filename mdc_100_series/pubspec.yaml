@@ -22,8 +22,15 @@ flutter:
   uses-material-design: true
   assets:
     - assets/diamond.png
-    - assets/app-de-viajes.png
-    - assets/app-viaje.png
+    - assets/app-viaje2.png
+    - assets/imagen-1.png
+    - assets/imagen-2.png
+    - assets/imagen-3.png
+    - assets/imagen-4.png
+    - assets/imagen-5.png
+    - assets/imagen-6.png
+    - assets/imagen-7.jpg
+    - assets/logo.png
     # TODO: Add slanted menu asset (104)
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg
