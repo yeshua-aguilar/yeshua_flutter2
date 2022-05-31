@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({ Key? key }) : super(key: key);
@@ -254,7 +255,7 @@ class _HomepageState extends State<Homepage> {
             )
           )
         ],
-      )
+      ),
     );
   }
 }

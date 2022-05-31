@@ -13,7 +13,8 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:shrine/barra.dart';
+import 'rutas/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -77,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text('siguiente'),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(
-                      builder: (context) => const Homepage(),
+                      builder: (context) => barra(),
                     ));
                   }
                 )

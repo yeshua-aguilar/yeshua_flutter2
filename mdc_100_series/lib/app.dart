@@ -14,9 +14,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shrine/barra.dart';
 
-import 'home.dart';
+import 'rutas/home.dart';
 import 'login.dart';
+import 'barra.dart';
 
 
 class ShrineApp extends StatelessWidget {
@@ -31,7 +33,7 @@ class ShrineApp extends StatelessWidget {
       routes: {
         '/login': (BuildContext context) => const LoginPage(),
         
-        '/': (BuildContext context) => const Homepage(),
+        '/': (BuildContext context) => barra(),
 
       },
     );
