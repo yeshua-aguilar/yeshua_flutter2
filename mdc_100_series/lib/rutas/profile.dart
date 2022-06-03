@@ -21,8 +21,8 @@ class _ProfileState extends State<Profile> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                  child: Image.asset(
-                    "assets/imagen-1.png",
+                  child: Image.network(
+                    "https://spain.progress.im/sites/default/files/dsc07844-e1415010478299.jpg",
                     fit: BoxFit.cover,
                     width: 100.0,
                     height: 100.0,
@@ -62,31 +62,6 @@ class _ProfileState extends State<Profile> {
                       ),
 
                       SizedBox(height: 20.0),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      //   children: <Widget>[
-                      //     InkWell(
-                      //       onTap: (){
-                      //         Navigator.of(context).push(
-                      //           MaterialPageRoute(
-                      //             builder: (BuildContext context){
-                      //               return ChangePassword();
-                      //             },
-                      //           ),
-                      //         );
-                      //       },
-                      //       child: Text("Logout",
-                      //         style: TextStyle(
-                      //           fontSize: 13.0,
-                      //           fontWeight: FontWeight.w400,
-                      //           color: Theme.of(context).accentColor,
-                      //         ),
-                      //         overflow: TextOverflow.ellipsis,
-                      //       ),
-                      //     ),
-                      //   ],
-                      // ),
-
                     ],
                   ),
                   flex: 3,
@@ -100,7 +75,7 @@ class _ProfileState extends State<Profile> {
             Padding(
               padding: EdgeInsets.all(5.0),
               child: Text(
-                "Account Information".toUpperCase(),
+                "Informacion de cuenta".toUpperCase(),
                 style: TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
@@ -110,7 +85,7 @@ class _ProfileState extends State<Profile> {
 
             ListTile(
               title: Text(
-                "Full Name",
+                "Nombre Completo",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
@@ -148,7 +123,7 @@ class _ProfileState extends State<Profile> {
 
             ListTile(
               title: Text(
-                "Phone",
+                "Telefono",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
@@ -162,7 +137,7 @@ class _ProfileState extends State<Profile> {
 
             ListTile(
               title: Text(
-                "Address",
+                "Direccion",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
@@ -176,7 +151,7 @@ class _ProfileState extends State<Profile> {
 
             ListTile(
               title: Text(
-                "Gender",
+                "Genero",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
@@ -184,13 +159,13 @@ class _ProfileState extends State<Profile> {
               ),
 
               subtitle: Text(
-                "Female",
+                "Hombre",
               ),
             ),
 
             ListTile(
               title: Text(
-                "Date of Birth",
+                "Dia de su nacimiento",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w700,
@@ -202,33 +177,6 @@ class _ProfileState extends State<Profile> {
               ),
             ),
 
-             MediaQuery.of(context).platformBrightness == Brightness.dark
-                 ? SizedBox()
-                 : ListTile(
-              title: Text(
-                "Dark Theme",
-                style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-
-              // trailing: Switch(
-              //   value: Provider.of<AppProvider>(context).theme == Constants.lightTheme
-              //       ? false
-              //       : true,
-              //   onChanged: (v) async{
-              //     if (v) {
-              //       Provider.of<AppProvider>(context, listen: false)
-              //           .setTheme(Constants.darkTheme, "dark");
-              //     } else {
-              //       Provider.of<AppProvider>(context, listen: false)
-              //           .setTheme(Constants.lightTheme, "light");
-              //     }
-              //   },
-              //   activeColor: Theme.of(context).accentColor,
-              // ),
-            ),
           ],
         ),
       ),

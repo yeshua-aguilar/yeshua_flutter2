@@ -3,7 +3,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:shrine/rutas/aventuras.dart';
 import 'package:shrine/rutas/destinos.dart';
 import 'package:shrine/rutas/home.dart';
-import 'package:shrine/rutas/perfil.dart';
 import 'package:shrine/rutas/profile.dart';
 import 'package:shrine/rutas/restaurantes.dart';
 
