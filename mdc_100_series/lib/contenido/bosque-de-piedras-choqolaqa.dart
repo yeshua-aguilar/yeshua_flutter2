@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class volcanMisti extends StatefulWidget {
-  volcanMisti({Key? key}) : super(key: key);
+class piedrasChoqolaqa extends StatefulWidget {
+  piedrasChoqolaqa({Key? key}) : super(key: key);
 
   @override
-  State<volcanMisti> createState() => _volcanMistiState();
+  State<piedrasChoqolaqa> createState() => _piedrasChoqolaqaState();
 }
 
-class _volcanMistiState extends State<volcanMisti> {
+class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("volcan Misti"),
+        title: Text("Bosque de Piedras Choqolaqa"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2019/12/02175004/shutterstock_340324499.jpg"),
+              "https://i.postimg.cc/sXpqGrYV/choqolaqa.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -31,20 +31,25 @@ class _volcanMistiState extends State<volcanMisti> {
                     // Usamos Container para el contenedor de la descripción
                     Center(
                       child: Text(
-                        "Volcán Misti",
+                        "Bosque de Piedras Choqolaqa",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Arequipa tiene uno de los destinos más impresionantes para los viajeros más atrevidos: el Misti, un volcán de 5.822 metros, con más de 800 mil años de antigüedad y que se encuentra entre los 16 volcanes activos y potencialmente activos del Perú. Si buscas un plan de máxima aventura, te recomendamos realizar el ascenso al Volcán Misti, una travesía de dos días rodeada de increíbles paisajes, acampando a más de 4.000 metros sobre el nivel del mar y con una llegada a la meta totalmente única: la vista del cráter del Misti.",
+                          "Choqolaqa es conocida como la antigua ciudad de Arequipa, el lugar histórico se compone de majestuosas rocas, según su historia ancestral Choqolaqa estaba formada por grandes Palacios y calles avenidas y zoológicos.",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      subtitle: Text(
+                          "Dicen los lugareños que la antigua civilización sobre la decisión y los dioses que están convencidos de que la ciudad está en piedra sería la explicación de esta tierra, y con la aparición de las rocas, les aseguro a algunas personas que han tenido la oportunidad de conocer que este es un mundo diferente. Cada formación rocosa revela los secretos de la antigua civilización que habitó esta zona, es por eso que Arequipa hace de esta parte de Arequipa un viaje en el tiempo.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
                       title:
                           Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
                       subtitle: Text(
-                          "Aunque Misty se puede ver desde casi cualquier lugar de la Ciudad Blanca, si quieres subir a la cima te recomendamos contratar una visita guiada ya que es un desafío de escalada alpina desafiante y debes ir acompañado de un guía. que conoce la zona y puede acompañarte en cada paso del camino.",
+                          "Tendremos que tomar para visitar Choqolaqa por cuenta propia deberemos dirigirnos hacia Tisco, por un trayecto que durará alrededor de 5 horas, ya alli puedes consultar a los pobladores Cómo llegar a Choqolaqa que se encuentra a 2 horas de distancia. recomendamos tomar un tour turístico de visita desde Arequipa.",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -69,7 +74,7 @@ class _volcanMistiState extends State<volcanMisti> {
                       ListTile(
                         title: Text("Partiendo desde Lima",
                             style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Vuelo + Guia",
+                        subtitle: Text("Auto + guia",
                             style: TextStyle(fontSize: 15)),
                       ),
                       Text(
@@ -79,7 +84,7 @@ class _volcanMistiState extends State<volcanMisti> {
                             style: TextStyle(fontSize: 15)),
                       ),
                       ListTile(
-                        title: Text("S/. 800", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 500", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shrine/contenido/bosque-de-piedras-choqolaqa.dart';
+import 'package:shrine/contenido/mirador-de-yanahura.dart';
+import 'package:shrine/contenido/monasterio-de-santa-catalina.dart';
+import 'package:shrine/contenido/reserva-de-salinas-y-aguada-blanca.dart';
 import 'package:shrine/contenido/volcan-misti.dart';
 
 class destino extends StatefulWidget {
@@ -12,11 +16,9 @@ class _destinoState extends State<destino> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Destinos'),
-      ),
       body: ListView(
         children: [
+          Image.network("https://i.ibb.co/J7Y75wp/ESPECIAL-arequipa.png"),
           Container(
             padding: EdgeInsets.all(12),
             child: Text(
@@ -82,7 +84,7 @@ class _destinoState extends State<destino> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => volcanMisti()));
+                                builder: (context) => santacatalina()));
                       },
                       child: Text('Ver')
                     ),
@@ -115,7 +117,7 @@ class _destinoState extends State<destino> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => volcanMisti()));
+                                builder: (context) => salinasAguada()));
                       },
                       child: Text('Ver')
                     ),
@@ -148,7 +150,7 @@ class _destinoState extends State<destino> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => volcanMisti()));
+                                builder: (context) => miradorYanahura()));
                       },
                       child: Text('Ver')
                     ),
@@ -181,7 +183,7 @@ class _destinoState extends State<destino> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => volcanMisti()));
+                                builder: (context) => piedrasChoqolaqa()));
                       },
                       child: Text('Ver')
                     ),

@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class volcanMisti extends StatefulWidget {
-  volcanMisti({Key? key}) : super(key: key);
+class salinasAguada extends StatefulWidget {
+  salinasAguada({Key? key}) : super(key: key);
 
   @override
-  State<volcanMisti> createState() => _volcanMistiState();
+  State<salinasAguada> createState() => _salinasAguadaState();
 }
 
-class _volcanMistiState extends State<volcanMisti> {
+class _salinasAguadaState extends State<salinasAguada> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("volcan Misti"),
+        title: Text("Reserva de Salinas y Aguada Blanca"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2019/12/02175004/shutterstock_340324499.jpg"),
+              "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2019/12/02182253/shutterstock_1116408959.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -29,22 +29,23 @@ class _volcanMistiState extends State<volcanMisti> {
                 child: Column(
                   children: <Widget>[
                     // Usamos Container para el contenedor de la descripción
+                    SizedBox(
+                      height: 12,
+                    ),
                     Center(
                       child: Text(
-                        "Volcán Misti",
+                        "Reserva Nacional Salinas y Aguada Blanca",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Arequipa tiene uno de los destinos más impresionantes para los viajeros más atrevidos: el Misti, un volcán de 5.822 metros, con más de 800 mil años de antigüedad y que se encuentra entre los 16 volcanes activos y potencialmente activos del Perú. Si buscas un plan de máxima aventura, te recomendamos realizar el ascenso al Volcán Misti, una travesía de dos días rodeada de increíbles paisajes, acampando a más de 4.000 metros sobre el nivel del mar y con una llegada a la meta totalmente única: la vista del cráter del Misti.",
+                          "Joya de patrimonio natural situada en las cercanías de Arequipa, a una altitud promedio de 4 300 msnm, una zona característica por sus paisajes que mezclan volcanes nevados, lagunas rodeadas de bofedales, bosques andinos y praderas.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
-                      title:
-                          Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
                       subtitle: Text(
-                          "Aunque Misty se puede ver desde casi cualquier lugar de la Ciudad Blanca, si quieres subir a la cima te recomendamos contratar una visita guiada ya que es un desafío de escalada alpina desafiante y debes ir acompañado de un guía. que conoce la zona y puede acompañarte en cada paso del camino.",
+                          "Su sitio más famoso corresponde a la Laguna Salinas, un escenario de particular belleza configurado a partir de un salar de aguas someras y extensos bofedales que lo circundan, un verdadero santuario de avifauna que logra acoger en ciertas épocas del año cerca de 20 000 aves acuáticas, encontrándose entre ellas sus famosos flamencos que tiñen de colorido las aguas de la laguna.",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -69,7 +70,7 @@ class _volcanMistiState extends State<volcanMisti> {
                       ListTile(
                         title: Text("Partiendo desde Lima",
                             style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Vuelo + Guia",
+                        subtitle: Text("Vuelo + auto",
                             style: TextStyle(fontSize: 15)),
                       ),
                       Text(
@@ -79,7 +80,7 @@ class _volcanMistiState extends State<volcanMisti> {
                             style: TextStyle(fontSize: 15)),
                       ),
                       ListTile(
-                        title: Text("S/. 800", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 900", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),

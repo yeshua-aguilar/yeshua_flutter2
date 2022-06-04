@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class volcanMisti extends StatefulWidget {
-  volcanMisti({Key? key}) : super(key: key);
+class miradorYanahura extends StatefulWidget {
+  miradorYanahura({Key? key}) : super(key: key);
 
   @override
-  State<volcanMisti> createState() => _volcanMistiState();
+  State<miradorYanahura> createState() => _miradorYanahuraState();
 }
 
-class _volcanMistiState extends State<volcanMisti> {
+class _miradorYanahuraState extends State<miradorYanahura> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("volcan Misti"),
+        title: Text("Mirador de Yanahura"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2019/12/02175004/shutterstock_340324499.jpg"),
+              "https://i.postimg.cc/5yr0HLqd/panoramoco.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -31,20 +31,20 @@ class _volcanMistiState extends State<volcanMisti> {
                     // Usamos Container para el contenedor de la descripción
                     Center(
                       child: Text(
-                        "Volcán Misti",
+                        "Mirador de Yanahura",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Arequipa tiene uno de los destinos más impresionantes para los viajeros más atrevidos: el Misti, un volcán de 5.822 metros, con más de 800 mil años de antigüedad y que se encuentra entre los 16 volcanes activos y potencialmente activos del Perú. Si buscas un plan de máxima aventura, te recomendamos realizar el ascenso al Volcán Misti, una travesía de dos días rodeada de increíbles paisajes, acampando a más de 4.000 metros sobre el nivel del mar y con una llegada a la meta totalmente única: la vista del cráter del Misti.",
+                          "Los miradores son algunos de los mejores lugares para visitar en Arequipa. Desde ellos se puede apreciar la ciudad en toda su dimensión. El tradicional mirador de Yanahuara, con sus arcos hechos de sillar, ha sido repotenciado con un mirador de cristal que se eleva por más de 50 metros y solo funciona sábados, domingos y feriados.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
                       title:
                           Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
                       subtitle: Text(
-                          "Aunque Misty se puede ver desde casi cualquier lugar de la Ciudad Blanca, si quieres subir a la cima te recomendamos contratar una visita guiada ya que es un desafío de escalada alpina desafiante y debes ir acompañado de un guía. que conoce la zona y puede acompañarte en cada paso del camino.",
+                          "Mirador de yanahuara puedes llegar desde el centro de Arequipa caminando en 10 minutos.",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -69,7 +69,7 @@ class _volcanMistiState extends State<volcanMisti> {
                       ListTile(
                         title: Text("Partiendo desde Lima",
                             style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Vuelo + Guia",
+                        subtitle: Text("Auto",
                             style: TextStyle(fontSize: 15)),
                       ),
                       Text(
@@ -79,7 +79,7 @@ class _volcanMistiState extends State<volcanMisti> {
                             style: TextStyle(fontSize: 15)),
                       ),
                       ListTile(
-                        title: Text("S/. 800", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 300", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),
