@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shrine/contenido/bosque-de-piedras-choqolaqa.dart';
+import 'package:shrine/contenido/chicha-gaston-acurio.dart';
 import 'package:shrine/contenido/mirador-de-yanahura.dart';
 import 'package:shrine/contenido/monasterio-de-santa-catalina.dart';
+import 'package:shrine/contenido/plaza-bar-grill.dart';
 import 'package:shrine/contenido/reserva-de-salinas-y-aguada-blanca.dart';
+import 'package:shrine/contenido/sunset-rooftop.dart';
+import 'package:shrine/contenido/tipika.dart';
 import 'package:shrine/contenido/volcan-misti.dart';
+import 'package:shrine/contenido/zingaro.dart';
 
 class restarante extends StatefulWidget {
   restarante({Key? key}) : super(key: key);
@@ -50,7 +55,7 @@ class _restaranteState extends State<restarante> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => volcanMisti()));
+                                builder: (context) => plazaBarGrill()));
                       },
                       child: Text('Ver')
                     ),
@@ -82,7 +87,7 @@ class _restaranteState extends State<restarante> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => santacatalina()));
+                                builder: (context) => sunsetRooftop()));
                       },
                       child: Text('Ver')
                     ),
@@ -114,7 +119,7 @@ class _restaranteState extends State<restarante> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => salinasAguada()));
+                                builder: (context) => chichaGaston()));
                       },
                       child: Text('Ver')
                     ),
@@ -146,7 +151,7 @@ class _restaranteState extends State<restarante> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => miradorYanahura()));
+                                builder: (context) => zingaro()));
                       },
                       child: Text('Ver')
                     ),
@@ -178,7 +183,7 @@ class _restaranteState extends State<restarante> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => piedrasChoqolaqa()));
+                                builder: (context) => tipika()));
                       },
                       child: Text('Ver')
                     ),
