@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shrine/contenido/bosque-de-piedras-choqolaqa.dart';
+import 'package:shrine/contenido/mirador-de-yanahura.dart';
+import 'package:shrine/contenido/monasterio-de-santa-catalina.dart';
+import 'package:shrine/contenido/reserva-de-salinas-y-aguada-blanca.dart';
+import 'package:shrine/contenido/volcan-misti.dart';
 
 class restarante extends StatefulWidget {
   restarante({Key? key}) : super(key: key);
@@ -11,16 +16,175 @@ class _restaranteState extends State<restarante> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Restaurantes'),
-      ),
       body: ListView(
         children: [
+          Image.network("https://i.ibb.co/f82cj7S/RESTAURANTEs.png"),
           Container(
             padding: EdgeInsets.all(12),
-            child: 
-            Text("--------- Disfruta de los mejores Restaurants ----------", style: TextStyle(fontSize: 18.4, fontWeight: FontWeight.bold),),
+            child: Text(
+              "---- Disfruta de los mejores Restaurantes ----",
+              style: TextStyle(fontSize: 18.4, fontWeight: FontWeight.bold),
+            ),
           ),
+          Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(
+                          'https://media-cdn.tripadvisor.com/media/photo-s/12/f3/13/d5/la-plaza-bar-grill.jpg'),
+                    ),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text("La Plaza Bar & Grill", style: TextStyle(fontSize: 20),),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => volcanMisti()));
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              )),
+          
+          Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(
+                          'https://media-cdn.tripadvisor.com/media/photo-s/17/e9/8a/d5/for-a-pictures.jpg'),
+                    ),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text("Sunset Rooftop Bar", style: TextStyle(fontSize: 20),),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => santacatalina()));
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              )),
+            
+            Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(
+                          'https://media-cdn.tripadvisor.com/media/photo-o/0c/3f/bc/8e/20160726-190725-largejpg.jpg'),
+                    ),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text("Chicha por Gaston Acurio", style: TextStyle(fontSize: 20),),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => salinasAguada()));
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              )),
+            
+            Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(
+                          'https://media-cdn.tripadvisor.com/media/photo-s/0f/0a/f3/b0/comedor-principal-main.jpg'),
+                    ),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text("Zingaro", style: TextStyle(fontSize: 20),)
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => miradorYanahura()));
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              )),
+
+            Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(
+                          'https://media-cdn.tripadvisor.com/media/photo-s/1b/1b/d1/5f/welcome-to-tipika.jpg'),
+                    ),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text("Tipika - Restaurante Turistico", style: TextStyle(fontSize: 20),)
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => piedrasChoqolaqa()));
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              )),
         ],
       ),
     );

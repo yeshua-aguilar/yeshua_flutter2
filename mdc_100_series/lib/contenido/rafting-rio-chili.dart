@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class piedrasChoqolaqa extends StatefulWidget {
-  piedrasChoqolaqa({Key? key}) : super(key: key);
+class raftingRioChili extends StatefulWidget {
+  raftingRioChili({Key? key}) : super(key: key);
 
   @override
-  State<piedrasChoqolaqa> createState() => _piedrasChoqolaqaState();
+  State<raftingRioChili> createState() => _raftingRioChiliState();
 }
 
-class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
+class _raftingRioChiliState extends State<raftingRioChili> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bosque de Piedras Choqolaqa"),
+        title: Text("Rafting en el río Chili"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://i.postimg.cc/sXpqGrYV/choqolaqa.jpg"),
+              "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/2a/ba/e2.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -31,25 +31,34 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     // Usamos Container para el contenedor de la descripción
                     Center(
                       child: Text(
-                        "Bosque de Piedras Choqolaqa",
+                        "Descripción general",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Choqolaqa es conocida como la antigua ciudad de Arequipa, el lugar histórico se compone de majestuosas rocas, según su historia ancestral Choqolaqa estaba formada por grandes Palacios y calles avenidas y zoológicos.",
-                          style: TextStyle(fontSize: 14)),
-                    ),
-                    ListTile(
-                      subtitle: Text(
-                          "Dicen los lugareños que la antigua civilización sobre la decisión y los dioses que están convencidos de que la ciudad está en piedra sería la explicación de esta tierra, y con la aparición de las rocas, les aseguro a algunas personas que han tenido la oportunidad de conocer que este es un mundo diferente. Cada formación rocosa revela los secretos de la antigua civilización que habitó esta zona, es por eso que Arequipa hace de esta parte de Arequipa un viaje en el tiempo.",
+                          "Pase el día navegando por el río Limay en una balsa de pie. Disfrute de las vistas de la estepa patagónica, aprenda sobre la flora y la fauna local, luego termine en Mangrullo por un tiempo para relajarse antes de regresar a Bariloche. Todo el equipo e instrucción incluidos, como transporte de ida y vuelta al hotel.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
                       title:
-                          Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
+                          Text("Servicios incluidos", style: TextStyle(fontSize: 18)),
                       subtitle: Text(
-                          "Tendremos que tomar para visitar Choqolaqa por cuenta propia deberemos dirigirnos hacia Tisco, por un trayecto que durará alrededor de 5 horas, ya alli puedes consultar a los pobladores Cómo llegar a Choqolaqa que se encuentra a 2 horas de distancia. recomendamos tomar un tour turístico de visita desde Arequipa.",
+                          "Equipo completo certificado (casco, chaleco, zapatos, traje de neopreno, chaqueta cortavientos), Traslados ida y vuelta al hotel, Aperitivos, Gui de rafting y kayakista de seguridad",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Salida y regreso", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Hotel Yaravi, Hotel Yaravi, Alvarez Thomas 521, Arequipa 04000 Peru",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Nota importante", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Recojo en hoteles céntricos de la ciudad de Arequipa.",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -71,20 +80,14 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     ),
 
                     Column(children: <Widget>[
-                      ListTile(
-                        title: Text("Partiendo desde Lima",
-                            style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Auto + guia",
-                            style: TextStyle(fontSize: 15)),
-                      ),
                       Text(
                           "--------------------------------------------------------------------------------------"),
                       ListTile(
                         subtitle: Text("Precio por persona",
                             style: TextStyle(fontSize: 15)),
-                      ), 
+                      ),
                       ListTile(
-                        title: Text("S/. 500", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 96,60", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),

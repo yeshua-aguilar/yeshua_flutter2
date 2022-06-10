@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class piedrasChoqolaqa extends StatefulWidget {
-  piedrasChoqolaqa({Key? key}) : super(key: key);
+class salinasBiking extends StatefulWidget {
+  salinasBiking({Key? key}) : super(key: key);
 
   @override
-  State<piedrasChoqolaqa> createState() => _piedrasChoqolaqaState();
+  State<salinasBiking> createState() => _salinasBikingState();
 }
 
-class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
+class _salinasBikingState extends State<salinasBiking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bosque de Piedras Choqolaqa"),
+        title: Text("Salinas BikingTour"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://i.postimg.cc/sXpqGrYV/choqolaqa.jpg"),
+              "https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/7f/99/81.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -31,25 +31,41 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     // Usamos Container para el contenedor de la descripción
                     Center(
                       child: Text(
-                        "Bosque de Piedras Choqolaqa",
+                        "Descripción general",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Choqolaqa es conocida como la antigua ciudad de Arequipa, el lugar histórico se compone de majestuosas rocas, según su historia ancestral Choqolaqa estaba formada por grandes Palacios y calles avenidas y zoológicos.",
-                          style: TextStyle(fontSize: 14)),
-                    ),
-                    ListTile(
-                      subtitle: Text(
-                          "Dicen los lugareños que la antigua civilización sobre la decisión y los dioses que están convencidos de que la ciudad está en piedra sería la explicación de esta tierra, y con la aparición de las rocas, les aseguro a algunas personas que han tenido la oportunidad de conocer que este es un mundo diferente. Cada formación rocosa revela los secretos de la antigua civilización que habitó esta zona, es por eso que Arequipa hace de esta parte de Arequipa un viaje en el tiempo.",
+                          "El lago Salinas es un lugar increíble ubicado a 2:00 hrs de Arequipa, es una opción perfecta para pasar un buen rato al aire libre. Este es un tour grupal en el que tendrás tiempo para apreciar el paisaje, tomar fotos y andar en bicicleta por el salar. Verá llamas, alpacas, vicuñas y flamencos.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
                       title:
-                          Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
+                          Text("Servicios incluidos", style: TextStyle(fontSize: 18)),
                       subtitle: Text(
-                          "Tendremos que tomar para visitar Choqolaqa por cuenta propia deberemos dirigirnos hacia Tisco, por un trayecto que durará alrededor de 5 horas, ya alli puedes consultar a los pobladores Cómo llegar a Choqolaqa que se encuentra a 2 horas de distancia. recomendamos tomar un tour turístico de visita desde Arequipa.",
+                          "Vehiculo con aire acondicionado, Desayuno, Uso de bicicleta, Incluye equipo de seguridad como casco, rodiulleras, coderas y guantes",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Salida y regreso", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Este operador tiene disponibles dos opciones de encuentro. Pueden encontrarse en el punto de salida que se indica a continuación o seleccionar una ubicación para la recogida.",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Destalles de recogida", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "El Portal de San Lazaro, El Portal de San Lazaro, Pasaje Violin 107 Frente a la Iglesia de San Lazaro - Unico Portal, Arequipa 054 Peru",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Destalles de regreso", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Plaza de Armas de Arequipa, JF27+F6H, Arequipa 04001, Perú",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -71,20 +87,14 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     ),
 
                     Column(children: <Widget>[
-                      ListTile(
-                        title: Text("Partiendo desde Lima",
-                            style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Auto + guia",
-                            style: TextStyle(fontSize: 15)),
-                      ),
                       Text(
                           "--------------------------------------------------------------------------------------"),
                       ListTile(
                         subtitle: Text("Precio por persona",
                             style: TextStyle(fontSize: 15)),
-                      ), 
+                      ),
                       ListTile(
-                        title: Text("S/. 500", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 342", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),

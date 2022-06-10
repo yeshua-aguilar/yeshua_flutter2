@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class piedrasChoqolaqa extends StatefulWidget {
-  piedrasChoqolaqa({Key? key}) : super(key: key);
+class tourQuad extends StatefulWidget {
+  tourQuad({Key? key}) : super(key: key);
 
   @override
-  State<piedrasChoqolaqa> createState() => _piedrasChoqolaqaState();
+  State<tourQuad> createState() => _tourQuadState();
 }
 
-class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
+class _tourQuadState extends State<tourQuad> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bosque de Piedras Choqolaqa"),
+        title: Text("Tour en Quad en Arequipa"),
       ),
       body: ListView(
         children: [
           Image.network(
-              "https://i.postimg.cc/sXpqGrYV/choqolaqa.jpg"),
+              "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ea/a2/e4.jpg"),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)),
@@ -31,25 +31,41 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     // Usamos Container para el contenedor de la descripción
                     Center(
                       child: Text(
-                        "Bosque de Piedras Choqolaqa",
+                        "Descripción general",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
                     ListTile(
                       subtitle: Text(
-                          "Choqolaqa es conocida como la antigua ciudad de Arequipa, el lugar histórico se compone de majestuosas rocas, según su historia ancestral Choqolaqa estaba formada por grandes Palacios y calles avenidas y zoológicos.",
-                          style: TextStyle(fontSize: 14)),
-                    ),
-                    ListTile(
-                      subtitle: Text(
-                          "Dicen los lugareños que la antigua civilización sobre la decisión y los dioses que están convencidos de que la ciudad está en piedra sería la explicación de esta tierra, y con la aparición de las rocas, les aseguro a algunas personas que han tenido la oportunidad de conocer que este es un mundo diferente. Cada formación rocosa revela los secretos de la antigua civilización que habitó esta zona, es por eso que Arequipa hace de esta parte de Arequipa un viaje en el tiempo.",
+                          "Increíble viaje de un día para personas aventureras que quieran ver la vida salvaje y los volcanes alrededor del lago salado de Salinas.Esta actividad al aire libre incluye una agradable caminata por las salinas en busca de los mejores lugares destacados.",
                           style: TextStyle(fontSize: 14)),
                     ),
                     ListTile(
                       title:
-                          Text("¿Como llegar?", style: TextStyle(fontSize: 20)),
+                          Text("Servicios incluidos", style: TextStyle(fontSize: 18)),
                       subtitle: Text(
-                          "Tendremos que tomar para visitar Choqolaqa por cuenta propia deberemos dirigirnos hacia Tisco, por un trayecto que durará alrededor de 5 horas, ya alli puedes consultar a los pobladores Cómo llegar a Choqolaqa que se encuentra a 2 horas de distancia. recomendamos tomar un tour turístico de visita desde Arequipa.",
+                          "Transporte privado, Regreso a su hotel en el centro de Arequipa, Agua potable y snack, Quads y equipo de quitacion, guia de habla inglesa",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Salida y regreso", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Este operador tiene disponibles dos opciones de encuentro. Pueden encontrarse en el punto de salida que se indica a continuación o seleccionar una ubicación para la recogida.",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Punto de partida", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Melgar 308, Melgar 308, Arequipa 04001, Perú",
+                          style: TextStyle(fontSize: 14)),
+                    ),
+                    ListTile(
+                      title:
+                          Text("Detalles de la recogida", style: TextStyle(fontSize: 18)),
+                      subtitle: Text(
+                          "Posada del Condor, Posada del Condor, Salaverry 204, Arequipa Peru",
                           style: TextStyle(fontSize: 14)),
                     ),
 
@@ -71,20 +87,14 @@ class _piedrasChoqolaqaState extends State<piedrasChoqolaqa> {
                     ),
 
                     Column(children: <Widget>[
-                      ListTile(
-                        title: Text("Partiendo desde Lima",
-                            style: TextStyle(fontSize: 18)),
-                        subtitle: Text("Auto + guia",
-                            style: TextStyle(fontSize: 15)),
-                      ),
                       Text(
                           "--------------------------------------------------------------------------------------"),
                       ListTile(
                         subtitle: Text("Precio por persona",
                             style: TextStyle(fontSize: 15)),
-                      ), 
+                      ),
                       ListTile(
-                        title: Text("S/. 500", style: TextStyle(fontSize: 28)),
+                        title: Text("S/. 589", style: TextStyle(fontSize: 28)),
                         subtitle: Text("Incluyendo impuestos, tasas y cargos",
                             style: TextStyle(fontSize: 15)),
                       ),
