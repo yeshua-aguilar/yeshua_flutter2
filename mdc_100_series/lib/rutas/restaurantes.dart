@@ -14,6 +14,7 @@ import 'package:shrine/contenido/volcan-misti.dart';
 import 'package:shrine/contenido/zingaro.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
+import 'package:shrine/ui/cajarestaurante.dart';
 
 class restarante extends StatefulWidget {
   restarante({Key? key}) : super(key: key);
@@ -28,16 +29,15 @@ class _restaranteState extends State<restarante> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          Image.network("https://i.ibb.co/f82cj7S/RESTAURANTEs.png"),
-          Container(
-            padding: EdgeInsets.all(12),
-            child: Text(
-              "---- Disfruta de los mejores Restaurantes ----",
-              style: TextStyle(fontSize: 18.4, fontWeight: FontWeight.bold),
-            ),
-          ),
+      body:
+          // Image.network("https://i.ibb.co/f82cj7S/RESTAURANTEs.png"),
+          // Container(
+          //   padding: EdgeInsets.all(12),
+          //   child: Text(
+          //     "---- Disfruta de los mejores Restaurantes ----",
+          //     style: TextStyle(fontSize: 18.4, fontWeight: FontWeight.bold),
+          //   ),
+          // ),
           FutureBuilder(
             initialData: [],
             future: RestauranteService().getRestaurantes(),
@@ -59,8 +59,6 @@ class _restaranteState extends State<restarante> {
               }
             }
           )
-        ],
-      ),
     );
   }
 }
