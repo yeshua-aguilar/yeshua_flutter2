@@ -9,27 +9,33 @@ class CajaRestaurante extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(2),
-      child: Column(
-        children: [
-          Text(
-            restau.name,
-            style: TextStyle(fontSize: 18.4, fontWeight: FontWeight.bold),
-          ),
-          Image.network(this.restau.imagen),
-          Text(
-            restau.descripcion,
-            style: TextStyle(fontSize: 18.4),
-          ),
-          RaisedButton(
-            child: Text("Ver"),
-            onPressed: (){
-            },
-          ),
-        ],
-      ),
-    );
+    return 
+          Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.all(15),
+              elevation: 10,
+              child: ClipRRect(
+                // Los bordes del contenido del card se cortan usando BorderRadius
+                borderRadius: BorderRadius.circular(30),
+                child: Column(
+                  children: <Widget>[
+                    // Usamos el widget Image para mostrar una imagen
+                    Image(
+                      image: NetworkImage(this.restau.imagen)),
+                    // Usamos Container para el contenedor de la descripción
+                    ListTile(
+                      title: Text(this.restau.name, style: TextStyle(fontSize: 20),)
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                      },
+                      child: Text('Ver')
+                    ),
+                  ],
+                ),
+              ));
+
 
 
 

@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 class RestauranteService {
 
-  final String api_url = "http://10.0.2.2:33966";
+  final String api_url = "http://10.0.2.2:4000";
 
   Future<List<Rest>> getRestaurantes() async {
     var url = api_url + "/api/rest/all";

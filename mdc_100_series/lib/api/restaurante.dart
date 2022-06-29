@@ -16,7 +16,7 @@ class Rest{
       name: json['name'] as String,
       descripcion: json['descripcion'] as String,
       imagen: json['imagen'] as String,
-      boton: json['boton']as String,
+      boton: json['boton'] as String,
     );
   }
 }
