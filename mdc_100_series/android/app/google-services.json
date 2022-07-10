@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "600395570792",
+    "project_id": "fluttergrupo2",
+    "storage_bucket": "fluttergrupo2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600395570792:android:c14856486cfc032d7225dd",
+        "android_client_info": {
+          "package_name": "com.example.shrine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600395570792-pjemg18c8n9vpo2iqt2q9ed05mblal04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX8tYxqP5ZAnOtYqGMfje1JmsSxWHvbC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600395570792-pjemg18c8n9vpo2iqt2q9ed05mblal04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
