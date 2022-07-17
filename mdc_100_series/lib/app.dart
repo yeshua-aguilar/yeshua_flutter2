@@ -28,7 +28,7 @@ class ShrineApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Shrine',
+      title: 'Arequipa Travel',
       initialRoute: '/login',
       routes: {
         '/login': (BuildContext context) => const LoginPage(),
